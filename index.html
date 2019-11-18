@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project 2 - Jaime Tavares</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Import selected google font -->
+<link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- To-do List  -->
+<div class="group">
+  <div class="row" id="row">
+    <img src="https://media.giphy.com/media/nZjJ3iPXpmRwI/giphy.gif" class="ifr"></img>
+    <div class="col" id="col">
+      <div id="myDiv" class="list-group">
+        <h2>Jaime's To Do List</h2>
+        <span class="list-group list-group-flush" id="info">
+          Welcome to my Javascript To-Do List<br>
+          To create a new item, write a task in the box below,
+          (optionally) set the due date for the task, and hit submit.<br>
+          Simply click on a task from the list, and it will be marked
+          as complete. To delete it from the list, click the small x.
+        </span>
+        <input type="text" id="myInput" placeholder="Task: " class="list-group-item">
+        <input type="date" id="myInput2" class="list-group-item">
+      </div>
+    </div>
+  </div>
+  <!-- Submit Button -->
+  <div class="row" id="submitButton">
+    <button type="button" class="btn btn-info" id="newItem" onclick="newElement();">Submit</button>
+  </div>
+  <!-- Task-List -->
+  <div class="row" id="submittedListItems">
+    <div class="col-12" id="taskList">
+      <ul class="list-group" id="myList">
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="scripts.js" async></script>
+
+</body>
+</html>

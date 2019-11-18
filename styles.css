@@ -1,0 +1,64 @@
+/* Css file */
+.group {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: 'Tomorrow', sans-serif;
+  background-image: linear-gradient(to top, #71f79f 0%, #002626 50%);
+}
+.ifr {
+  position: relative;
+  width: 20%;
+  height: 75%;
+  margin-left: 2%;
+  margin-top: 2%;
+  display: none;
+  overflow: hidden;
+}
+#info, #myDiv {
+  font-size: 16px;
+  color: #5C9EAD;
+  text-align: center;
+}
+#myDiv {
+  font-size: 22px;
+  color: #71F79F;
+}
+
+#newItem {
+  margin: auto;
+  margin-top: 10px;
+  width: 98%;
+  background-color: #71F79F;
+  color: black;
+}
+
+ul li {
+  transition: 1s;
+}
+
+ul li:hover {
+  background-color: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #32CD32;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked:hover {
+  background-color: green;
+}
+
+#dateInput {
+  position: fixed;
+  float: right;
+  right: 25%;
+  font-size: 14px;
+}
+
+.taskText {
+  font-size: 28px;
+}
